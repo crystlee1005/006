@@ -4,26 +4,26 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
    #include <stdio.h> 
-void sumTwo(int a, int b)
+int sumTwo(int a, int b)
 {
-	   printf("%i", a+b);
+	   return(a+b);
 }
-void square(int n)
+int square(int n)
 {
-	   printf("%i", n*n);
+	   return(n*n);
 }
-void get_max(int x, int y)
+int get_max(int x, int y)
 {
 	   if ( x>y)
-	   printf("%i", x);
+	   return(x);
 	   else if ( x<y)
-	   printf("%i", y); 
+	   return(y); 
 }
 int main(void)
 {
-	sumTwo( 1, 2);
-	square(3);
-	get_max(4,5);
+	printf("sumTwo: %i\n", sumTwo( 1, 2));
+	printf("square: %i\n",square(3));
+	printf("get_max: %i\n", get_max(4,5));
 
 	
 	return 0;
