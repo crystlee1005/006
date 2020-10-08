@@ -2,29 +2,23 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int square( int a )
+{
+	return ( a*a);
+}
 
-   #include <stdio.h> 
-int sumTwo(int a, int b)
+int main()
 {
-	   return(a+b);
-}
-int square(int n)
-{
-	   return(n*n);
-}
-int get_max(int x, int y)
-{
-	   if ( x>y)
-	   return(x);
-	   else if ( x<y)
-	   return(y); 
-}
-int main(void)
-{
-	printf("sumTwo: %i\n", sumTwo( 1, 2));
-	printf("square: %i\n",square(3));
-	printf("get_max: %i\n", get_max(4,5));
-
+	int a = 2;
 	
-	return 0;
+	a = square(a);
+	printf("a=%i\n",a);
+	
+
 }
+
+
+  
+	
+
+
